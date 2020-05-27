@@ -17,6 +17,7 @@ namespace WebApplicationCurso.Controllers
 
         public IActionResult About()
         {
+            ViewData["Title"] = "Minha Primeira Pagina";
             ViewData["Message"] = "Your application description page.";
 
             return View();
