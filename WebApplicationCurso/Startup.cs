@@ -36,8 +36,14 @@ namespace WebApplicationCurso
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            //utilizando SQLSERVER
+            // services.AddDbContext<Context>(options =>
+            //       options.UseSqlServer(Configuration.GetConnectionString("Context")));
+
+            // Utilizamdo MYSQL
             services.AddDbContext<Context>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("Context")));
+                    options.UseMySql(Configuration.GetConnectionString("Context"), builder =>
+                            builder.MigrationsAssembly("WebApplicationCurso")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
