@@ -20,6 +20,7 @@ namespace WebApplicationCurso.Models
         public DbSet<WebApplicationCurso.Models.PedidosItems> PedidosItems { get; set; }
         public DbSet<WebApplicationCurso.Models.Produto> Produto { get; set; }
         public DbSet<WebApplicationCurso.Models.User> User { get; set; }
-
+        public DbSet<WebApplicationCurso.Models.SalesRecord> SalesRecord { get; set; }
+        public DbSet<WebApplicationCurso.Models.Seller> Seller { get; set; }
     }
 }
