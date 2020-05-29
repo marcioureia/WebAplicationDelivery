@@ -11,6 +11,7 @@ namespace WebApplicationCurso.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public string Cellular { get; set; }
+        public List<Endereco> Endereco { get; set; }
 
     }
 }

@@ -8,8 +8,7 @@ namespace WebApplicationCurso.Models
 {
     public class User
     {
-        [Key]
-        [Required]
+       
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }

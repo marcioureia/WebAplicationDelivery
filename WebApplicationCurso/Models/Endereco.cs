@@ -11,6 +11,7 @@ namespace WebApplicationCurso.Models
         [Key]
         public int Id { get; set; }
         public int IdCliente { get; set; }
+        public Cliente Cliente { get; set; }
         public string Logradouro { get; set; }
         public int Numero { get; set; }
         public string Complemento { get; set; }
